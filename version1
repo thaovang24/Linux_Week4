@@ -1,1 +1,36 @@
 # Linux_Week4
+#!/bin/bash
+#Learning shell scripting examples
+#Week 3 script shell, continue from week 2
+#Listing block devices using command line
+#
+#Create list of names for kins.txt
+echo “last names” > kins.txt
+
+#append the names to kins.txt
+echo “yaj” >> kins.txt
+echo “vaj” >> kins.txt
+
+#list text for kins.txt
+cat kins.txt
+
+#make directory folder named Kins
+mkdir Kins
+
+#Move kins.txt to Kins folder
+mv kins.txt/Kins
+
+#change directory to Kins folder
+cd Kins
+
+#check the current working directory path
+pwd
+
+#check devices hardware
+lsblk -ln
+
+#show hardware devices ULID 
+blkid/dev/names
+
+#Removed devices no longer exist
+blkid -g
